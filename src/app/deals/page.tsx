@@ -61,7 +61,7 @@ export default function DealsPage() {
   };
 
   return (
-    <div className="px-4 w-full  px-4 py-8 bg-gray-50">
+    <div className="px-4 w-full  py-8 bg-gray-50">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-700 mb-2">Special Deals & Discounts</h1>
         <p className="text-gray-500">Discover our best offers and save big on these selected items</p>

@@ -4,6 +4,13 @@ import CategoryCard from "@/components/CategoryCard";
 import { products, categories } from "@/data/products";
 import Link from "next/link";
 
+export interface CategoryCardProps {
+  id: number; // Added the missing id property
+  name: string;
+  image: string;
+  slug: string;
+}
+
 export default function Home() {
   // Featured products - take first 8 products
   const featuredProducts = products.slice(0, 8);
@@ -19,7 +26,7 @@ export default function Home() {
       <section className="container mx-auto px-4 mb-12">
         <h2 className="text-2xl text-gray-700 font-bold mb-6">Shop by Category</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          {categories.map((category) => (
+          {categories.map((category:CategoryCardProps) => (
             <CategoryCard
               key={category.id}
               id={category.id}
@@ -69,12 +76,12 @@ export default function Home() {
               Get up to 50% off on all products. Limited time offer!
             </p>
           </div>
-          <a
+          <Link
             href="/deals"
-            className="bg-white text-blue-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
+            className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-md shadow-md hover:bg-blue-700 transition-all duration-200 ease-in-out"
           >
             Shop Now
-          </a>
+          </Link>
         </div>
       </section>
     </div>
