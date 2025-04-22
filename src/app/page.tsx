@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import ProductCard from "@/components/ProductCard";
 import CategoryCard from "@/components/CategoryCard";
 import { products, categories } from "@/data/products";
+import Link from "next/link";
 
 export default function Home() {
   // Featured products - take first 8 products
@@ -34,12 +35,12 @@ export default function Home() {
       <section className="container text-gray-700 mx-auto px-4 mb-12">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold">Featured Products</h2>
-          <a
+          <Link
             href="/products"
             className="text-blue-600 hover:underline font-medium"
           >
             View All →
-          </a>
+          </Link>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {featuredProducts.map((product) => (

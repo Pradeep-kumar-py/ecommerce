@@ -8,7 +8,7 @@ type CategoryCardProps = {
   slug: string;
 };
 
-export default function CategoryCard({ id, name, image, slug }: CategoryCardProps) {
+export default function CategoryCard({  name, image, slug }: CategoryCardProps) {
   return (
     <Link href={`/category/${slug}`} className="block">
       <div className="relative h-40 rounded-lg overflow-hidden group">

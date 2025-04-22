@@ -50,7 +50,7 @@ export default function CartPage() {
             />
           </svg>
           <h2 className="text-2xl font-bold text-gray-700 mb-2">Your cart is empty</h2>
-          <p className="text-gray-500 mb-6">Looks like you haven't added anything to your cart yet.</p>
+          <p className="text-gray-500 mb-6">Looks like you haven&rsquo;t added anything to your cart yet.</p>
           <Link 
             href="/products" 
             className="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors"
