@@ -16,8 +16,7 @@ export const products = [
     ],
     images: [
       "/headphone.jpeg",
-      "/products/headphones-2.jpg",
-      "/products/headphones-3.jpg",
+  
     ],
     category: "electronics",
     stock: 15,
@@ -40,7 +39,6 @@ export const products = [
     ],
     images: [
       "/shirt.jpeg",
-      "/products/shirt-2.jpg",
     ],
     category: "fashion",
     stock: 25,
@@ -63,7 +61,6 @@ export const products = [
     ],
     images: [
       "/fitnesstracker.jpeg",
-      "/products/fitness-tracker-2.jpg",
     ],
     category: "electronics",
     stock: 10,
@@ -86,7 +83,6 @@ export const products = [
     ],
     images: [
       "/bottle.jpeg",
-      "/products/water-bottle-2.jpg",
     ],
     category: "home",
     stock: 30,
@@ -109,8 +105,6 @@ export const products = [
     ],
     images: [
       "/dslar.jpeg",
-      "/products/camera-2.jpg",
-      "/products/camera-3.jpg",
     ],
     category: "electronics",
     stock: 8,
@@ -133,7 +127,6 @@ export const products = [
     ],
     images: [
       "/chair.jpeg",
-      "/products/chair-2.jpg",
     ],
     category: "furniture",
     stock: 12,

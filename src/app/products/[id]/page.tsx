@@ -1,6 +1,7 @@
 // This is a server component
-import ProductClient from "./productserver"; 
+import ProductClient from "./productserver";
 
-export default function ProductPages({ params }: { params: { id: string } }) {
-  return <ProductClient id={params.id} />;
+export default async function ProductPages({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = await params;
+  return <ProductClient id={resolvedParams.id} />;
 }
