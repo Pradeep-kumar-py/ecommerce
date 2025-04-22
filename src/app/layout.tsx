@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import ChatBot from "@/components/chatbot.jsx";
 import Footer from "@/components/Footer";
 import { CartProvider } from "@/context/CartContext";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-grow">{children}</main>
           <Footer />
+          <ChatBot />
         </CartProvider>
       </body>
     </html>
