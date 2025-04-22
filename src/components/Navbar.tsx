@@ -24,10 +24,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             {/* Replace with your logo image if needed */}
-            <span className="font-bold text-2xl tracking-tight">FlipMart</span>
+            <span className="font-bold text-2xl tracking-tight">India Mart</span>
           </Link>
 
-          {/* Search - md and up */}
+          {/* Search - md and up */} 
           <div className="hidden md:flex flex-1 mx-6 max-w-xl">
             <div className="relative w-full group">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
