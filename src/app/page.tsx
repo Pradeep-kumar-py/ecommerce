@@ -29,7 +29,6 @@ export default function Home() {
           {categories.map((category:CategoryCardProps) => (
             <CategoryCard
               key={category.id}
-              id={category.id}
               name={category.name}
               image={category.image}
               slug={category.slug}

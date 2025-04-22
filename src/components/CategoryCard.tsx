@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 type CategoryCardProps = {
-  id: number;
   name: string;
   image: string;
   slug: string;

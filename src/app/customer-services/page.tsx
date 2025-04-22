@@ -21,7 +21,7 @@ export default function CustomerServicePage() {
       <div className="w-full max-w-3xl px-4 py-10">
         <h1 className="text-3xl font-bold mb-6 text-blue-700">Customer Service</h1>
         <p className="mb-6 text-gray-800">
-          Need help? We&apos;re here for you. Check our FAQs below or contact our team directly.
+          Need help? We are here for you. Check our FAQs below or contact our team directly.
         </p>
 
         {/* Contact Info */}
@@ -40,7 +40,7 @@ export default function CustomerServicePage() {
           <div className="space-y-4">
             <details className="bg-white border rounded p-3">
               <summary className="font-medium cursor-pointer text-gray-900">How can I track my order?</summary>
-              <p className="mt-2 text-gray-700">After placing your order, you&apos;ll receive a confirmation email with a tracking link.</p>
+              <p className="mt-2 text-gray-700">After placing your order, you will receive a confirmation email with a tracking link.</p>
             </details>
             <details className="bg-white border rounded p-3">
               <summary className="font-medium cursor-pointer text-gray-900">What is your return policy?</summary>
@@ -58,12 +58,12 @@ export default function CustomerServicePage() {
           <h2 className="text-xl font-semibold mb-2">Can&apos;t find what you&apos;re looking for?</h2>
           {submitted ? (
             <div className="bg-green-50 border border-green-200 text-green-700 rounded p-4 mb-4">
-              Thank you for contacting us! We&apos;ll get back to you soon.
-              <p className="mb-4">Our team will be in touch as soon as we&apos;ve reviewed your request.</p>
+              Thank you for contacting us! We will get back to you soon.
+              <p className="mb-4">Our team will be in touch as soon as we have reviewed your request.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4 bg-white border rounded p-4">
-              <p className="mb-4">We typically respond to all inquiries within 24 hours during business days. We&apos;re here to help!</p>
+              <p className="mb-4">We typically respond to all inquiries within 24 hours during business days. We are here to help!</p>
               <div>
                 <label htmlFor="name" className="block text-gray-800 font-medium mb-1">Name</label>
                 <input
